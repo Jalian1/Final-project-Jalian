@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: 'Roboto', sans-serif; /* Using Google Fonts for typography */
+  background-color: #f4f4f9; /* Light background */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12; /* Interactive hover effect */
+}
+
+/* Main Section Styles */
+main {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Image Styles */
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+/* Button Container */
+.button-container {
+  margin-bottom: 20px; /* Space between buttons and image */
+}
+
+/* Button Styles (Already implemented) */
+/* Style for the Find A Charity button */
+.btn-charity {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-charity:hover {
+  background-color: #45a049; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+/* Style for the View Profile button */
+.btn-profile {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #008CBA; /* Blue color */
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px; /* Rounded corners */
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-profile:hover {
+  background-color: #007B9E; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly grow the button on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  a.btn-charity, a.btn-profile {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 1.5em;
+  }
+}
+
+/* Accessibility: High Contrast for Links */
+a:focus, a:hover {
+  outline: none;
+  border-bottom: 2px solid #f39c12; /* A clear focus indicator */
+}
+
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  gap: 15px; /* Space between form elements */
+  max-width: 500px; /* Limit the width of the form */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+form label {
+  font-size: 16px;
+  margin-bottom: 5px; /* Space between label and input */
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form textarea {
+  resize: vertical; /* Allow the user to resize the textarea vertically */
+}
+
+form button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Optional: Style the "Go Back to Home" button */
+.btn-charity {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #27d117;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-charity:hover {
+  background-color: #000000;
+  transform: scale(1.05);
+}
